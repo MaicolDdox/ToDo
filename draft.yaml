@@ -1,0 +1,8 @@
+models:
+  Task:
+    title: string:80
+    description: text nullable
+    priority: enum:low,medium,high default:medium
+    status: enum:pending,in_progress,done default:pending
+    due_date: date nullable
+    tags: string:255 nullable
